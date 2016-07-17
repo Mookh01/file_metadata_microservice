@@ -1,0 +1,24 @@
+html
+  head
+    title
+  body
+    .container
+      h1 file metadata microservice
+      p
+        a(href='https://github.com/Mookh01/file_metadata_microservice.git') Look at the source code on GitHub
+      h2 Usage
+      |       Upload a file to get a JSON object with the file's size in the
+      code size
+       |  property. Try it out with the form below:
+      form(method='post', enctype='multipart/form-data', action='/')
+        p
+          input(type='file', name='upl')
+        p
+          input(type='submit')
+      h2 API project for freeCodeCamp
+      a(href='(http://www.freecodecamp.com/challenges/file-metadata-microservice') FreeCodeCamp Link
+      p User stories to be satisfied:
+      ul
+        li User Story: I can submit a FormData object that includes a file upload.
+        li
+          | User Story: When I submit something, I will receive the file size in bytes within the JSON response
